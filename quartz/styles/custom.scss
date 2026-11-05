@@ -1,3 +1,55 @@
 @use "./variables.scss" as *;
 
+
 // put your custom CSS here!
+
+
+
+
+// Force Quartz to use Montserrat site-wide
+:root, [saved-theme="dark"], :root[saved-theme="dark"] {
+  --headerFont: 'Montserrat', sans-serif;
+  --bodyFont: 'Montserrat', sans-serif;
+  --codeFont: 'Montserrat', monospace;
+}
+
+// 1. Remove background highlights or background styling from links
+a.internal, a.external {
+  background-color: transparent !important;
+  padding: 0 !important;
+  box-shadow: none !important;
+}
+
+// 2. Make the search container/modal background solid #1a1a1a
+#search-container, .search-container, .search-space {
+  background-color: #1a1a1a !important; // Sets a solid dark background
+  backdrop-filter: none !important;     // Removes glassmorphism/blur transparency
+}
+
+// ==========================================
+// LIGHT MODE (Inverted configuration)
+// ==========================================
+:root {
+  --light: #f2f3f4;         // Light background
+  --lightgray: #dcdde1;     // Borders & card backgrounds
+  --gray: #718096;          // Muted text
+  --dark: #1a1a1a;          // Headings (dark)
+  --darkgray: #2d3748;      // Body text (dark)
+  --primary: #1a1a1a;       // Primary elements
+  --secondary: #9333EA;     // Purple accent adjusted for light mode
+  --tertiary: #65a30d;      // Green accent variant
+}
+
+// ==========================================
+// DARK MODE (Your exact requested colors)
+// ==========================================
+[saved-theme="dark"], :root[saved-theme="dark"] {
+  --light: #1a1a1a;         // Background (#1a1a1a)
+  --lightgray: #2a2a2a;     // Borders & cards
+  --gray: #888888;          // Muted text
+  --dark: #e7e8e9;          // Headings (#e7e8e9)
+  --darkgray: #e7e8e9;      // Body text (#e7e8e9)
+  --primary: #e7e8e9;       // Primary (#e7e8e9)
+  --secondary: #A855F7;     // Secondary (#A855F7)
+  --tertiary: #8FC73E;      // Accent (#8FC73E)
+}
