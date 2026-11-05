@@ -47,7 +47,12 @@ The antidote to information chaos isn't more technology; it's [[radical]], uncom
 
 You don’t have to get it all right on day one. Start with the single most critical friction point—whether that's ECOs, field reports, or manufacturing documents—and focus on getting **1% better today than you were yesterday**. Compound that daily, and you’ll improve nearly **37-fold in a year**. Fall backward by 1% each day, and you’ll shrink to a fraction of where you started.
 
-$$\text{Growth: } 1.01^{365} \approx 37.78$$$$\text{Decay: } 0.99^{365} \approx 0.025 $$
+$$
+\text{Growth: } 1.01^{365} \approx 37.78
+$$
+$$
+\text{Decay: } 0.99^{365} \approx 0.025 
+$$
 
 Here are some starting points that that everyone—from senior directors to junior drafters—should implement:
 
