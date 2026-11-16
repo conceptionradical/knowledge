@@ -191,10 +191,10 @@ plugins:
       position: beforeBody
       priority: 20
   - source: "@quartz-community/tag-list"
-    enabled: false
+    enabled: true
     layout:
-      position: beforeBody
-      priority: 30
+      position: right
+      priority: 60
   - source: "@quartz-community/page-title"
     enabled: true
     layout:
