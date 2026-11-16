@@ -9,7 +9,7 @@ Teams waste hours wading through communication chaos: conflicting file versions,
 
 Instead of addressing the root cause, leadership reflexively reaches for an expensive band-aid: procure yet another SaaS proprietary platform.
 
-Adding another dashboard on top of a broken pipeline isn't a solution. **IT IS THE PROBLEM.**
+Adding another dashboard on top of a broken  ==pipeline==  isn't a solution. **IT IS THE PROBLEM.**
 
 ### The Software Trap: Buying Band-Aids for Human Problems
 
@@ -29,7 +29,7 @@ graph TD
 
 Software cannot fix a human process problem. Without basic discipline, adding another proprietary layer only deepens the clutter.
 
-Unverified changes and scattered data drain project margins and lead times. When information is fragmented, engineers waste hours playing digital detective: hunting for the latest spec, checking email chains, or guessing which subfolder holds the true drawing. 
+Unverified changes and scattered data drain project margins and lead times. When information is fragmented, engineers waste hours playing digital detective: hunting for the latest spec, checking email chains, or guessing which subfolder holds the ==true== drawing. 
 
 Working off outdated baselines invites costly rework and liability risks. When teams spend more time verifying where data lives than actually engineering, productivity plummets.
 
@@ -60,7 +60,7 @@ Here are some starting points that that everyone—from senior directors to juni
 
 - **The "Zero-Tolerance" Rule for Shadow Channels:** If a change order or requirement is discussed on a phone call or text, simply ask, _"Would you please commit to this on the official channel so everyone on the team gets the latest information?"_
 
-- **Rigid Naming Conventions:** A single, non-negotiable [[file-naming standard]] that makes document versions instantly identifiable at a glance.
+- **Rigid Naming Conventions:** A single, non-negotiable [[File Naming Standard]] that makes document versions instantly identifiable at a glance.
 
 - **[[ISO 8601]] Timestamps** Saying _"See you on 08-11 at 7:30 o'clock"_ can mean multiple different time slots depending on who's reading it. 
 
@@ -68,7 +68,7 @@ Here are some starting points that that everyone—from senior directors to juni
 
 None of this is meant to suggest you should avoid implementing a Product Data Management (PDM) vault. 
 
-In fact, once your foundational processes are locked down and running smoothly, adopting a PDM is the ideal next milestone—once your team clears out legacy habits and establishes true workflow hygiene.
+In fact, once your foundational processes are locked down and running smoothly, adopting a PDM is the ideal next milestone—once your team clears out legacy habits and establishes true workflow ==hygiene==.
 
 Both [[SolidWorks PDM]] and [[Autodesk Vault]] provide robust frameworks for taking your data management to the next level.
 

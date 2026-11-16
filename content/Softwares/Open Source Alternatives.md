@@ -1,3 +1,11 @@
+---
+title:
+aliases:
+description:
+date: 2026-11-13
+draft: true
+tags:
+---
 
 > [!QUOTE]
 > As the old adage goes, the best things in life are very expensive, and the second best things in life are usually free.

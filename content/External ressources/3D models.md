@@ -7,8 +7,11 @@ Essential suppliers and libraries providing native CAD models for off-the-shelf 
 
 - **[Lincoln Electric CAD Library](https://www.lincolnelectric.com/)** — Standard components and weldment models for structural and joining applications.
 
-- **[Quebox / Quebox Industrial Components](http://www.quebox.eu/)** — Specialized industrial and manufacturing components. *(Broken / Offline Link - For Future Search)*
+- ~~**[Quebox / Quebox Industrial Components](http://www.quebox.eu/)** — Specialized industrial and manufacturing components.~~ *(Broken / Offline Link - For Future Search)*
 
+- **[3Dfindit](https://www.3dfindit.com/)** — Visual 3D search engine for millions of manufacturer-certified CAD, CAE, and BIM models across thousands of component catalogs. 
+
+- **[CAD Block Exchange Network (CBEN)](http://cben.net/)** — Community-driven repository of user-contributed 2D and 3D CAD blocks, mechanical symbols, and standard components.
 
 ---
 
@@ -31,7 +34,7 @@ Broad multi-format repositories for mechanical parts, supplier catalogs, and com
 - **[CAD Corner](https://cad-corner.com/)** — Engineering resources, free AutoCAD blocks, DWG drawings, and technical drafting details.
 
 - **[Innerscene Drawing Library](https://www.innerscene.com/tools/library/drawings)** — Repository of free, real-scale CAD drawings, details, and layout templates released under CC0.
--
+
 - **[Innerscene 3D Parts Library](https://www.innerscene.com/tools/library/3d-parts)** — Open collection of public domain 3D models, mechanical components, and furniture for visualization and prototyping.
 
 
