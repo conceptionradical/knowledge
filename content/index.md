@@ -9,7 +9,7 @@ This repository serves as an open workspace for notes cultivated over years of p
 2026-11-03
 You can read my latest essay here: [[The Illusion of Resilience]]
 
-On November 12, 2026, Microsoft experienced a widespread service disruption . For many organizations, this meant more than losing access to email, it disrupted communication, collaboration, workflows and everyday business operations. But the real issue isn't Microsoft. It's how much of our businesses have become dependent on a handful of technology providers. 
+On November 12, 2026, Microsoft experienced a widespread service disruption . For many organizations, this meant more than losing access to email, it disrupted communication, collaboration, workflows and everyday business operations. But the real issue isn't Microsoft, it's how much of our businesses have become dependent on a handful of technology providers. 
 
 ---
 2026-11-03

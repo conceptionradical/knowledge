@@ -66,7 +66,7 @@ plugins:
       enableVideoEmbed: true
       enableCheckbox: true
     order: 20
-    - source: "@quartz-community/syntax-highlighting"
+  - source: "@quartz-community/syntax-highlighting"
     enabled: true
     options:
       theme:
