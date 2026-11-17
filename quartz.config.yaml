@@ -7,7 +7,7 @@ configuration:
   analytics:
     provider: plausible
   locale: en-US
-  baseUrl: conceptionradical.github.io/knowledge
+  baseUrl: knowledge.conceptionradical.com
   ignorePatterns:
     - private
     - templates
