@@ -1,6 +1,8 @@
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
   pageTitle: Knowledge Base
+  # Choose how HTML and other static assets are published:
+  publishAssets: "referenced" # Options: "all" (default) or "referenced"
   pageTitleSuffix: ""
   enableSPA: true
   enablePopovers: true

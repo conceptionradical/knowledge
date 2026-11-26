@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>MM to Feet/Inches Converter</title>
+</head>
+<body>
+
+<h2>MM → Feet + Inches + Fraction</h2>
+
+<input id="mm" type="number" placeholder="Enter millimeters">
+
+<input id="den" type="number" value="16" min="1" style="width:60px;">
+Fraction denominator
+
+<input id="dec" type="number" value="4" min="0" max="10" style="width:60px;">
+Decimal places
+
+<button onclick="convert()">Convert</button>
+
+<p id="result"></p>
+<p id="result2"></p>
+
+<script>
+// Allow Enter key to trigger conversion
+document.getElementById("mm").addEventListener("keydown", function(e) {
+  if (e.key === "Enter") {
+    e.preventDefault();
+    convert();
+  }
+});
+
+function convert() {
+  const mm = Number(document.getElementById("mm").value);
+  const den = Number(document.getElementById("den").value);   // fraction denominator
+  const dec = Number(document.getElementById("dec").value);   // decimal places
+
+  const totalInches = mm / 25.4;
+
+  const feet = Math.floor(totalInches / 12);
+  const inchesDecimal = totalInches - feet * 12;
+
+  const inches = Math.floor(inchesDecimal);
+
+  // Fractional part
+  const frac = inchesDecimal - inches;
+
+  // Convert to nearest denominator
+  const numerator = Math.round(frac * den);
+
+  // Reduce fraction
+  function gcd(a, b) { return b ? gcd(b, a % b) : a; }
+  const g = gcd(numerator, den);
+
+  const num = numerator / g;
+  const denReduced = den / g;
+
+  let fraction = "";
+  if (num > 0) fraction = `${num}/${denReduced}`;
+
+  // Build FEET + INCHES + FRACTION output
+  let output = `${feet}' ${inches}"`;
+  if (fraction) output += ` ${fraction}`;
+
+  document.getElementById("result").textContent = output;
+
+  // Build DECIMAL INCHES output
+  const decimalInches = totalInches.toFixed(dec);
+  document.getElementById("result2").textContent =
+    `${decimalInches} inches`;
+}
+</script>
+
+</body>
+</html>

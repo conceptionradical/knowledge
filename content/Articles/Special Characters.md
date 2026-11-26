@@ -8,7 +8,7 @@ tags:
 ---
 
 
-When creating a filepath or filename, it is mandatory to never use special characters. The reasons are explained in my article [[File Naming Standard]].
+When creating a filepath or filename, it is mandatory to never use special characters. The reasons are explained in my article [[file-naming-standard]].
 
 Here are some special characters and a proposition of whitelist characters you sould use to replace them.
 

@@ -1,133 +1,12 @@
 ---
-title:
+title: File Naming Standard
 aliases:
+  - File Naming Standard
 description:
-date:
-draft: true
+date: 2026-11-26
+draft: false
 tags:
 ---
-
-
-It is way simpler to define how to construct an appropriate filepath by defining a list of approved characters rather than defining witch characters to avoid.
-
-
-Your web files will be viewed by numerous users who use a wide variety of operating systems (Mac, PC, and Linux for instance) and devices (desktops, tablets, and smartphones are some examples). Therefore, it is essential to play it safe and avoid common illegal directory and filename characters.
-
-Naming conventions are important in _web folders_ as well as for _downloadable_ files such as PDFs, Word documents, and Excel spreadsheets.
-
-complete folder path + filename + extension is maximum 256 characters, keep things shorts
-
-avoid mixing lowercase and CAPS
-
-Do not use any of these common illegal characters/symbols:
-
-# pound
-
-% percent
-
-& ampersand
-
-{ left curly bracket
-
-} right curly bracket
-
-\ back slash
-
-< left angle bracket
-
-> right angle bracket
-
-* asterisk
-
-? question mark
-
-/ forward slash
-
-  blank spaces
-
-$ dollar sign
-
-! exclamation point
-
-' single quotes
-
-" double quotes
-
-: colon
-
-@ at sign
-
-+ plus sign
-
-` backtick
-
-| pipe
-
-= equal sign
-
-Also, keep these rules in mind.
-
-·         Don’t start or end your filename with a space, period, hyphen, or underline.
-
-·         Keep your filenames to a reasonable length and be sure they are under 31 characters.
-
-·         Most operating systems are case sensitive; **always use lowercase**.
-
-·         Avoid using spaces and underscores; use a hyphen instead. This will also improve your [search engine rankings](https://www.mtu.edu/umc/services/digital/seo/).
-
-**Bad filenames:**
-
-·         F&A Costs.html
-
-·         my PDF file#name.pdf
-
-**Web Browsers see:**
-
-·         F&amp;A%20Costs.html
-
-·         my%20PDF%20file%23name.pdf
-
-**Good filenames:**
-
-·         index.html
-
-·         my-pdf-file-name.pdf
-
-_Note:_ This list is not exhaustive. It is meant to help you avoid common errors in filenames. If you have any questions or need any assistance, do not hesitate to contact [cmshelp@mtu.edu](mailto:cmshelp@mtu.edu).
-
-
-
-
-// ---------------- SPECIAL CHARACTER REPLACEMENT MAP ----------------
-
-const specialMap = {
-    "@": "A",
-    "€": "E",
-    "!": "I",
-    "Ø": "O", "ø": "O",
-    "$": "S",
-    "+": "P",
-    "*": "X",
-    "%": "P",
-    "^": "_",
-    "~": "-",
-    "(": "_", ")": "_",
-    "[": "_", "]": "_",
-    "{": "_", "}": "_",
-
-    // Accents
-    "é": "e", "è": "e", "ê": "e", "ë": "e",
-    "á": "a", "à": "a", "â": "a", "ä": "a",
-    "ó": "o", "ò": "o", "ô": "o", "ö": "o",
-    "ú": "u", "ù": "u", "û": "u", "ü": "u",
-    "í": "i", "ì": "i", "î": "i", "ï": "i",
-    "ç": "c"
-};
-
-
-
----
-
 # The Ultimate Guide to Clean File Naming and Paths on Windows
 
 A robust file-naming convention is the backbone of a well-organized digital workspace. On Windows, poor naming practices lead to broken paths, sync errors, and broken links. By following a few strict rules, you can ensure your files remain accessible, searchable, and future-proof.
@@ -137,7 +16,7 @@ A robust file-naming convention is the backbone of a well-organized digital work
 
 A recent fashion has emerged to use dots (`.`) as separators (for example, telephone numbers written as `581.996.1234` or product Alpha model `A1.2.46`). When you create filenames regarding those types of descriptions, be mindful of replacing the dots with a hyphen (`-`) or underscore (`_`).
 
-Keep in mind that a filename is intended to act only as a pointer or a unique identifier to each file; it is not a ministerial exam on language. You can ditch accentuating letters—no one will punish you for it.
+Keep in mind that a filename is intended to act only as a **unique** and **stable** *identifier* to each file on the disk; it is not a ministerial exam on language nor a place to store metadata. You can ditch accentuating letters—no one will punish you for it. Also avoid putting metadata like: Approved, By John Doe etc... Metadata can change in the lifecycle of your file, it's UNIQUE identifier SHOULD NOT change.
 
 
 > [!DANGER]
@@ -157,7 +36,7 @@ While modern versions of Windows can support long paths if enabled in the regist
 ### Path Comparison
 
 * ❌ **Bloated Path:** `C:\Company Abc Official Drive\Projects\2026 Projects\Drawings\Manufacturing Drawings\Up to date Manufacturing Drawings\final-drawing.dwg` *(Already hits 118+ characters before the filename is even fully read, and repeats descriptions across subfolders).*
-* ✅ **Optimized Path:** `C:\ABC\PROJECTS\2026\DWG\MFG\FINAL-DRAWING.dwg`
+* ✅ **Optimized Path:** `C:\ABC\PROJECTS\2026\DWG\MFG\1234-5587.dwg`
 
 > **Tip:** Use abbreviations where possible, and never repeat the same description across nested subfolders.
 
@@ -178,7 +57,7 @@ Inconsistent capitalization makes filenames look messy and can cause issues acro
 
 Windows reserves several characters for system commands and file system operations. Using them will result in errors or prevent files from saving entirely.
 
-* **Forbidden Symbols:** `<, >, :, ", /, \, |, ?, *`
+* **Forbidden Symbols:** `<, >, :, ", /, \, |, ?, *, @, +, ~
 
 I have written an article about special characters and a proposition of whitelist characters replacing them. read it here.
 
@@ -193,7 +72,7 @@ Instead of trying to remember every single character to avoid, it is far simpler
 * **Numbers:** `0-9`
 * **Separators:** Hyphen (`-`) and Underscore (`_`)
 
-Nothing else is permitted. This means **no spaces**, no periods (except before the file extension, meaning only one period in the entire filename), no commas, and no special symbols.
+Nothing else is permitted. This means **no spaces**, no periods (except the one before the file extension, meaning only one period in the entire filename), no commas, and no special symbols.
 
 ### A Note on Underscores
 Be mindful when using underscores (`_`). If your file naming or path styling adds an underline decoration, underscores can blend into the text and look like an extra-wide space character (`This_is_an_example`). Hyphens (`-`) are generally safer and cleaner.
@@ -202,12 +81,12 @@ If you choose to use underscores, it is a good idea to use underscores as a **ma
 
 ### Examples
 
-| Status | Filename | Why? |
-| :--- | :--- | :--- |
-| ❌ | `Project Plan (Final).md` | Uses spaces, parentheses, and mixed case. |
-| ❌ | `report_v1.2.md` | Uses an extra period in the filename body. |
-| ✅ | `project-plan-final.md` | Uses only lowercase letters and hyphens. |
-| ✅ | `q1-budget-2026.md` | Clean, concise, and strictly follows the whitelist. |
+| Status | Filename            | Why?                                                |
+| :----- | :------------------ | :-------------------------------------------------- |
+| ❌      | `Project Plan.dwg`  | Uses spaces, parentheses, and mixed case.           |
+| ❌      | `report_v1.2.md`    | Uses an extra period in the filename body.          |
+| ✅      | `project-plan.md`   | Uses only lowercase letters and hyphens.            |
+| ✅      | `q1-budget-2026.md` | Clean, concise, and strictly follows the whitelist. |
 
 ---
 
@@ -222,9 +101,9 @@ Your active folders should always contain strictly up-to-date files.
 
 ## Summary Checklist
 
-1. **Length:** Keep total paths under 256 characters (avoid enabling long paths).
+1. **Length:** Keep total paths under 256 characters (do not enable long paths).
 2. **Hierarchy:** Keep folders shallow, use abbreviations, and avoid repeating folder descriptions.
 3. **Case:** Keep it uniform (preferably all lowercase).
 4. **Characters:** Use only `a-z`, `A-Z`, `0-9`, `-`, and `_` (avoid spaces and extra periods).
 5. **Archiving:** Zip or move obsolete files out of active workspaces.
-6. I have developed a tool that can help you sanitize file names for manual renaming before you store them in your single source of truth because let's face it you will constantly receive from other people filenames with bad naming convention. I have also a software available for puchase that can batch run the sanitization on all files inside a specified folder.
+6. I have developed a tool ([[sanitize-text.html]]) that can help you clean up file names for manual renaming before you store them in your single source of truth because let's face it you will constantly receive from other people filenames with bad naming convention. [Reach out ](conceptionradical.com/contact)if you would be interested in a software that can batch run the sanitization on all files inside a specified folder.
